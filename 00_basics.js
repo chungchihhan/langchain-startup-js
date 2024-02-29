@@ -17,6 +17,16 @@ async function chat(input) {
   return response.choices[0].message.content;
 }
 
-chat("What is the meaning of life?")
+const question = "what is the capital of France?";
+
+chat(question)
+  .then((response) => console.log(response))
+  .catch((error) => console.error(error));
+
+const promptTemplate = "Be funny when answering this question: {question}";
+
+const prompt = promptTemplate.replace("{question}", question);
+
+chat(prompt)
   .then((response) => console.log(response))
   .catch((error) => console.error(error));
