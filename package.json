@@ -19,6 +19,7 @@
   "homepage": "https://github.com/chungchihhan/langchain-startup-ts#readme",
   "dependencies": {
     "dotenv": "^16.4.5",
+    "langchain": "^0.1.24",
     "openai": "^4.28.4"
   }
 }
